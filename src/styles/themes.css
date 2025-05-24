@@ -1,0 +1,43 @@
+/* Light Theme (default) */
+body {
+  --bg-color: #f8f9fa;
+  --text-color: #1a202c;
+  --card-bg: #ffffff;
+  --border-color: #e2e8f0;
+  --accent-color: #4299e1;
+}
+
+/* Dark Theme */
+body.theme-dark {
+  --bg-color: #1a202c;
+  --text-color: #e2e8f0;
+  --card-bg: #2d3748;
+  --border-color: #4a5568;
+  --accent-color: #63b3ed;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Neon Theme */
+body.theme-neon {
+  --bg-color: #0a0a0a;
+  --text-color: #00ff88;
+  --card-bg: #1a1a2e;
+  --border-color: #00ff88;
+  --accent-color: #ff0080;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.theme-neon * {
+  border-color: var(--border-color);
+}
+
+body.theme-neon .line::before {
+  background: #ff0080;
+}
+
+body.theme-neon .heading__title {
+  color: #00ff88;
+  text-shadow: 0 0 10px #00ff88;
+}
